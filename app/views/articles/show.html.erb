@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <h1><%= @article.title %></h1>
+    <p><%= @article.body %></p>
+  </div>
+  <div class="row">
+     <hr>
+     <div class="comments">
+       <%= render @article.comments %>
+     </div>
+  </div>
+  <div class="row">
+    <%= render 'comments/form' %>
+  </div>
+</div>
+
+
+
+
+<%= link_to 'Back', articles_path %>
